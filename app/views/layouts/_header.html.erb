@@ -1,0 +1,20 @@
+<header class="flex-header">
+
+	<% if user_signed_in? %>
+	  <%= link_to user_path(current_user) do %>
+	    <div class="btn btn-outline-success">My Page</div>
+	  <% end %>
+
+	<% else %>
+	  <%= link_to new_user_session_path do %>
+	    <div class="btn btn-primary">log in</div>
+	  <% end %>
+	  <%= link_to new_user_registration_path do %>
+	    <div class="btn btn-primary">sign up</div>
+	  <% end %>
+	<% end %>
+  <%= link_to root_path do %>
+	  <div class="btn btn-primary">Home</div>
+	<% end %>
+	<div class="btn btn-success" >main</div>
+</header>

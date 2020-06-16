@@ -1,0 +1,14 @@
+
+/*header*/
+
+.flex-header {
+	display: flex;
+}
+
+.top-image {
+	background-image: image-url("main_image.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+}
